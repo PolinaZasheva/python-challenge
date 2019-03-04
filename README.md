@@ -1,6 +1,7 @@
 # python-challenge
 
 #PyBank
+---
 
 * The goal is to create a Python script for analyzing the financial records of a company. 
 * To accomplish this, reference the financial data stored in the file budget_data.csv. T
