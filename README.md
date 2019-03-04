@@ -25,3 +25,34 @@ Financial Analysis
   Greatest Increase in Profits: Feb-2012 ($1926159)  
   Greatest Decrease in Profits: Sep-2013 ($-2196167)  
 ```
+
+PyRoll
+---
+
+The goal is to help a small, rural town modernize its vote-counting process.  
+To accomplish this, reference the set of poll data called election_data.csv.  
+The dataset is composed of three columns: Voter ID, County, and Candidate.  
+
+Create a Python script that analyzes the votes and calculates each of the following:  
+   1. The total number of votes cast.  
+   2. A complete list of candidates who received votes.  
+   3. The percentage of votes each candidate won.  
+   4. The total number of votes each candidate won.  
+   5. The winner of the election based on popular vote.  
+   
+*In addition, your final script should both print the analysis to the terminal and export a text file with the results*
+
+Results:  
+```
+    Election Results
+  -------------------------
+  Total Votes: 3521001
+  -------------------------
+  Khan: 63.000% (2218231)
+  Correy: 20.000% (704200)
+  Li: 14.000% (492940)
+  O'Tooley: 3.000% (105630)
+  -------------------------
+  Winner: Khan
+  -------------------------
+```
