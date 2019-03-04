@@ -7,7 +7,8 @@ The goal is to create a Python script for analyzing the financial records of a c
 To accomplish this, reference the financial data stored in the file budget_data.csv.  
 The dataset is composed of two columns: Date and Profit and Losses
 
-Create a Python script that analyzes the records to calculate each of the following:  
+Create a Python script that analyzes the records to calculate each of the following:
+
     * The total number of months included in the dataset
     * The net total amount of "Profit/Losses" over the entire period
     * The average of the changes in "Profit/Losses" over the entire period
