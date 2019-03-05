@@ -26,7 +26,7 @@ Financial Analysis
   Greatest Decrease in Profits: Sep-2013 ($-2196167)  
 ```
 
-PyRoll
+PyPoll
 ---
 
 The goal is to help a small, rural town modernize its vote-counting process.  
