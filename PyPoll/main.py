@@ -55,3 +55,22 @@ for count in range(len(candidates)):
 print("---------------------------")
 print(f"Winner: {winner}")
 print("---------------------------")
+
+output_file = ("PyPoll.txt")
+write_file = f"{output_file}_Results.txt"
+
+# Write file
+filewriter = open(write_file, mode = 'w')
+
+# Print to write file
+filewriter.write("Election Results\n")
+filewriter.write("--------------------------\n")
+filewriter.write(f"Total Votes: {number_votes}\n")
+for count in range(len(candidates)):
+    filewriter.write(f"{candidates[count]}: {percentage[count]}% ({total_votes[count]})\n")
+filewriter.write("---------------------------\n")
+filewriter.write(f"Winner: {winner}\n")
+filewriter.write("---------------------------\n")
+
+# Close file
+filewriter.close()
