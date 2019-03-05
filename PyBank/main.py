@@ -1,7 +1,7 @@
 import os
 import csv
 
-#create variables for calculations
+#create new variables
 month_counter = 0
 total_revenue = 0
 total_revenue_change = 0
@@ -11,7 +11,7 @@ csvpath = os.path.join('budget_data.csv')
 with open (csvpath) as csvfile:
     csvreader = csv.reader(csvfile,delimiter=',')
 
-# Skip headers
+# Skip first row
     next(csvreader, None)
 
  # Start reading file at line 1
@@ -74,23 +74,21 @@ with open (csvpath) as csvfile:
     print(f"Greatest Decrease in Profits: {min_month} {min_revenue} USD")
     print("")
 
-    # Export a text file with the results
-    output_file = budget_revenue[0:-4]
+        # Open write file
+        output_file = open("PyBank_Results.txt", "w")
+        write_budget_dataCSV = f"{output_file}_pybank_results.txt"
 
-    write_budget_revenue = f"{output_file}_pybank_results.txt"
+        filewriter = open("PyBank_Results.txt", "w")
 
-    # Open write file
-    filewriter = open(write_budget_revenue, mode = 'w')
-
-    # Print to write file
-    filewriter.write(f"Financial Analysis:\n")
-    filewriter.write("-------------------------------------------------------\n")
-    filewriter.write(f"Total Months: {month_counter}\n")
-    filewriter.write(f"Total: {total_revenue} USD\n")
-    filewriter.write(f"Average Change: {average_revenue_change} USD\n")
-    filewriter.write(f"Greatest Increase in Profits: {max_month} {max_revenue} USD\n")
-    filewriter.write(f"Greatest Decrease in Profits: {min_month} {min_revenue} USD\n")
-    filewriter.write("")
+        # Print to write file
+        filewriter.write(f"Financial Analysis:\n")
+        filewriter.write("-------------------------------------------------------\n")
+        filewriter.write(f"Total Months: {month_counter}\n")
+        filewriter.write(f"Total: {total_revenue} USD\n")
+        filewriter.write(f"Average Change: {average_revenue_change} USD\n")
+        filewriter.write(f"Greatest Increase in Profits: {max_month} {max_revenue} USD\n")
+        filewriter.write(f"Greatest Decrease in Profits: {min_month} {min_revenue} USD\n")
+        filewriter.write("")
 
     filewriter.close()
 
