@@ -74,24 +74,3 @@ with open (csvpath) as csvfile:
     print(f"Greatest Decrease in Profits: {min_month} {min_revenue} USD")
     print("")
 
-        # Open write file
-        output_file = open("PyBank_Results.txt", "w")
-        write_budget_dataCSV = f"{output_file}_pybank_results.txt"
-
-        filewriter = open("PyBank_Results.txt", "w")
-
-        # Print to write file
-        filewriter.write(f"Financial Analysis:\n")
-        filewriter.write("-------------------------------------------------------\n")
-        filewriter.write(f"Total Months: {month_counter}\n")
-        filewriter.write(f"Total: {total_revenue} USD\n")
-        filewriter.write(f"Average Change: {average_revenue_change} USD\n")
-        filewriter.write(f"Greatest Increase in Profits: {max_month} {max_revenue} USD\n")
-        filewriter.write(f"Greatest Decrease in Profits: {min_month} {min_revenue} USD\n")
-        filewriter.write("")
-
-    filewriter.close()
-
-
-
-

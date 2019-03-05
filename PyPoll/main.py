@@ -46,7 +46,7 @@ winner = candidates [max_index]
 # Round
 percentage = [round(i,2) for i in percentage]
 
-# Printing Results
+ # Print results
 print("Election Results")
 print("--------------------------")
 print(f"Total Votes: {number_votes}")
